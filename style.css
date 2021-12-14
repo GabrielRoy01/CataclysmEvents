@@ -1,0 +1,352 @@
+*{
+    box-sizing: inherit;
+    text-transform: uppercase;
+}
+body{
+    background-color: black;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    margin: 30px 30px 30px 30px;
+
+}
+.principal{
+    display:flex;
+    width: 100%;
+    color: rgb(255, 132, 0);
+}
+#logo-cataclysm{
+    height: 45vw;
+    width: 95vw;
+    align-items: center;    
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-logo-artistes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+    column-gap: 50px;
+    margin-top: 100px;
+}
+.logo-artistes{
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+.artiste-presentation{
+    color: whitesmoke;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.artiste-presentation p{
+    font-weight: bold;
+}
+
+
+.slogant{
+    font-size: large; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: rgb(255, 132, 0);
+    text-align: center;
+    margin-top: 20px;
+}
+/*Video intro*/
+.video-player{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    border-style: 2px solid white;
+    margin-bottom: 200px;
+
+}
+video{
+    width: 60%;
+    height: 300px;
+    pointer-events: none;
+
+}
+/*Menu*/
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid #ff8300;
+    border-bottom: 2px solid #ff8300;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+}
+.menu a{
+    display: flex;
+    width: auto;
+    align-content: center;
+    font-size: xx-large ;
+    font-family: OCR A Std, monospace;
+    font-weight: bolder;
+    color: #ff8300;
+
+}
+.contenu{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    text-align:center;  
+    width:100%;
+    height:200px;
+}
+/*hover soulignement orange*/
+.menu a {
+    display: inline;
+    position: relative;
+    color: #ff8300;
+    text-decoration: none;
+
+}
+.menu a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    width: 0%;
+    left: 0px;
+    height: 2px;
+    transition: 0.25s cubic-bezier(0.72,-0.01, 0.19, 0.92);
+    background: #ff8300;
+}
+.menu a:hover:after {
+    width: 100%;
+}
+/*Fin Menu*/
+h1 {
+    box-sizing: border-box;
+    color: #ff8300;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px
+}
+h2 {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 42px;
+    margin-bottom: 24px;
+    color: black;
+    text-align: center;
+}
+.template-message{
+    background-color: white;
+    width: 48vw;
+    margin-top: 50px;
+}
+.aboutus{
+    padding: 30px 30px 30px 30px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.aboutus div{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+.icone{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+p+p{
+    font-weight:normal ;
+    font-size: smaller;
+    color: rgb(37, 37, 37);
+}
+.template-services{
+    background-color: white;
+    width: 100%;
+    margin-top: 50px;
+}
+.social-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+.social-list-mail{
+    display: flex;
+    content: "\2709";
+    width: auto;
+}
+.social-list-facebook{
+    display: flex;
+    display: inline;
+    width: auto;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #ff8300;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  /* Facebook */
+  .fa-facebook {
+    color: #ff8300;
+    border-style: solid wi ;
+  }
+  h3{
+    display: flex;
+    font-family: Akko, sans-serif; 
+    color:#ff8300;
+    font-weight: 400;
+    justify-content: center;
+    position: relative;
+    top: 92px ;
+  }
+
+/*shop*/
+.contener-shop{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.column-shop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.container-sells{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.t-shirt{
+    display: flex;
+    width: 20vw;
+    height: 20vw;
+    border: 1px rgb(49, 49, 49) solid;
+    color: white;
+}
+.CenteroutSoon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.t-shirt+p+p, .t-shirt+p {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.btn_view {
+    transition: background-color .5s;
+  }
+  
+.btn_view:hover {
+    background-color: transparent;
+  }
+
+li:nth-child(2n+1){
+    color: rgb(235, 204, 28);
+}
+a {
+    text-decoration: none;
+
+}
+/*Gallery*/
+
+#galleryImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#galleryImg {
+    display: flex;
+}
+img{
+    width: 100px;
+}
+
+@media screen and ( hover){
+    .image img {
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+    }
+    .image img:hover {
+    /* L'image est grossie de 25% */
+    -webkit-transform:scale(3.75); /* Safari et Chrome */
+    -moz-transform:scale(3.75); /* Firefox */
+    -ms-transform:scale(3.75); /* Internet Explorer 9 */
+    -o-transform:scale(3.75); /* Opera */
+    transform:scale(3.75);
+    }
+}
+video {
+    margin-top:40px;
+    margin-bottom: 30px;
+    border: rgb(49, 49, 49) solid 1px;
+}
+/*Events*/
+.flexboxContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flexbox-events{
+    display: flex;
+    display: block;
+    width: 50vw;
+}
+.flierFestival{
+    display: flex;
+    width: 30vw;
+    height: 36vw;
+    border: rgb(49, 49, 49) solid 1px;
+    color: whitesmoke;
+    position: relative;
+    top: 70px;
+}
